@@ -173,3 +173,99 @@ nav ul li a{
     color: white;
     margin-top: 6px;
 }
+
+/* choose */
+#choose{
+    background-color: #1c033b;
+}
+.choose-container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.choose-header{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    padding-bottom:30px ;
+}
+.card-container{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,170px);
+}
+.choose-card-1,.choose-card-2,.choose-card-3,.choose-card-4,.choose-card-5{
+    background-color: #6705de36;
+}
+.choose-card-1{
+    color: white;
+    padding: 50px 30px;
+    border-radius: 30px;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.choose-card-1 h2{
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.choose-card-1 p{
+    color: gray;
+}
+.choose-card-2{
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.choose-card-2 h2{
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.choose-card-2 p{
+    color: gray;
+}
+.choose-card-3{
+    color: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.choose-card-3 h2{
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.choose-card-3 p{
+    color: gray;
+}
+.choose-card-4{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.choose-card-4 h2{
+    font-size: 1.4rem;
+    margin: 8px 0;
+}
+.choose-card-4 p{
+    color: gray;
+}
+.choose-card-5{
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.choose-card-5 h2{
+    font-size: 1.4rem;
+    margin: 8px 0;
+}
+.choose-card-5 p{
+    color: gray;
+}
