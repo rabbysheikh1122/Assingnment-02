@@ -128,7 +128,7 @@ nav ul li a{
 }
 
 /* about */
-#about{
+#about,#featured-Episodes{
     background-color: #15012f;
 }
 .about-container{
@@ -179,6 +179,7 @@ nav ul li a{
     background-color: #1c033b;
 }
 .choose-container{
+    padding-bottom: 70px;
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
@@ -268,4 +269,55 @@ nav ul li a{
 }
 .choose-card-5 p{
     color: gray;
+}
+
+
+
+.featured-container{
+    max-width: 1200px;
+    width: 80%;
+     margin: 0 auto;
+    /* text-align: center; */
+}
+.featured-header{
+    text-align: center;
+    padding-top:70px ;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom:40px ;
+}
+.main-video-card{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+iframe{
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 25px ;
+}
+.video-card{
+    border-radius: 25px;
+    width: 280px;
+    height: 355px;
+    background-color: #6705de36;
+}
+.video-card h2{
+    font-size:1.3rem;
+    padding: 0 8px ;
+    padding-top: 10px;
+    color: white;
+}
+.video-card p{
+    padding-left: 10px;
+    padding-top: 8px;
+    font-size: 15px;
+    color: gray;
+}
+.video-card h3{
+    color: rgb(3, 255, 3);
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
 }
