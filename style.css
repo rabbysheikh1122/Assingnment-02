@@ -27,12 +27,20 @@ nav ul li a{
     text-decoration: none;
     font-size: 19px;
     color: white;
+    transition: .4s ease-in;
+}
+
+nav ul li a:hover{
+    color: black;
 }
 .header-logo{
     color: white;
 }
 span{
-    color:deeppink;
+
+    color:transparent;
+    background: linear-gradient(to right,deeppink, darkorchid,orange);
+    -webkit-background-clip: text;
 }
 .btn{
     border: none;
@@ -48,7 +56,8 @@ span{
     );
     transition: .4s ease-in;
 }
-.btn:hover{
+ .btn:hover{
+    filter: drop-shadow(0 0 10px #fffdef); 
     color: black;
      background: linear-gradient(
         to left,
@@ -57,11 +66,15 @@ span{
         darkorchid
     );
 }
+/* .menu-ber a{
+    font-size: 1.5rem;
+    color: white;
+} */
+
 
 /* hero */
 
 #hero{
-     /* width: 100%; */
     min-height: 100vh; 
     background: url(./assets/hero-bg.png);
     background-position: center;
@@ -95,7 +108,7 @@ span{
     transition: .4s ease-in;
 }
 .btn-2:hover{
-    color: white;
+    filter: drop-shadow(0 0 10px #fffdef); 
 }
 .hero-logo img{
     width: 100px;
