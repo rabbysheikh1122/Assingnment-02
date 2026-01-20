@@ -97,6 +97,7 @@ span{
 }
 
 .hero-logo{
+    margin-right: 50px;
     width: 300px;
     height: 300px;
     margin-top: 50px;
@@ -468,6 +469,7 @@ iframe{
         display: block;
     }
 .hero-logo {
+    margin-left: 50px;
     height: 300px;
     width: 300px;
 } 
