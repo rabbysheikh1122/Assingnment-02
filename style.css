@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }#header{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     background-color:#6705de ; 
     border-bottom: 1px solid white;
 }
@@ -66,10 +69,12 @@ span{
         darkorchid
     );
 }
-/* .menu-ber a{
+.menu-ber a{
+   margin-right: 30px;
+    display: none;
     font-size: 1.5rem;
     color: white;
-} */
+}
 
 
 /* hero */
@@ -82,31 +87,23 @@ span{
     background-repeat: no-repeat;
 }
 .hero-container{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     position: absolute;
     text-align: center;
     margin-left: 370px;
 }
 
 .hero-logo{
-    margin-left: 100px;
-    /* margin: 0 auto; */
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin-top: 50px;
     background: url(./assets/hero-circle.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: relative; */
 }
-/* .hero-logo{
-    position: relative;
-    padding: 70px;
-    margin-left: 35px;
-    margin-top: 50px;
-    height: 300px;
-    width: 300px;
-} */
 .hero-logo .btn-2{
     position: absolute;
     margin-left:105px;
@@ -123,12 +120,14 @@ span{
     filter: drop-shadow(0 0 10px #fffdef); 
 }
 .hero-logo img{
-    margin-top: 50px;
+    margin-top: 70px;
     width: 100px;
     height: 150px;
 }
 .hero-text{
-    margin-top: 35px;
+    margin-top: 30px;
+    padding-bottom: 100px;
+
 }
 .hero-text h1{
     color: white;
@@ -140,6 +139,30 @@ span{
     color: white;
     font-size: 15px;
     margin-bottom: 15px;
+}
+.btn-2{
+    border: none;
+    border-radius: 25px;
+    padding: 7px 12px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(
+        to right,
+        orange,
+        deeppink,
+        darkorchid
+    );
+    transition: .4s ease-in;
+}
+ .btn-2:hover{
+    filter: drop-shadow(0 0 10px #fffdef); 
+    color: black;
+     background: linear-gradient(
+        to left,
+        orange,
+        deeppink,
+        darkorchid
+    );
 }
 .btn-1{
     /* margin-right: 330px; */
@@ -315,9 +338,11 @@ span{
 }
 .main-video-card{
     padding-bottom: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 iframe{
     border-top-left-radius: 25px ;
@@ -429,5 +454,71 @@ iframe{
 .footer-text p{
     font-size: 15px;
     color: gray;
-    /* margin-bottom: 30px; */
+}
+
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    nav,.btn{
+        display: none;
+    }
+    .menu-ber a{
+        display: block;
+    }
+.hero-logo {
+    height: 300px;
+    width: 300px;
+} 
+.hero-logo img{
+    margin-top: 70px;
+  }
+.hero-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-text p,.p{
+    text-align: justify;
+}
+.about-card{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card-container{
+    display: grid;
+    /* grid-template-rows: repeat(1,); */
+    grid-template-columns: repeat(1,1fr);
+}
+.choose-card-1{
+margin-left: 10px
+}
+.choose-card-5{
+    margin-left: 15px;
+}
+.main-video-card{
+
+    gap: 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.meet-container{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+.main-icon{
+    margin-left: 100px;
+}
+.footer-icon{
+    /* line-clamp: 10px;
+    line-height: 10px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer-icon a i{
+    margin-bottom: 20px;
+}
 }
