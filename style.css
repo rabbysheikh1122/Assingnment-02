@@ -97,7 +97,7 @@ span{
 }
 
 .hero-logo{
-    margin-right: 50px;
+    margin-right: 100px;
     width: 300px;
     height: 300px;
     margin-top: 50px;
@@ -105,6 +105,9 @@ span{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.hero-text{
+    margin-right: 100px;
 }
 .hero-logo .btn-2{
     position: absolute;
@@ -469,10 +472,13 @@ iframe{
         display: block;
     }
 .hero-logo {
-    margin-left: 50px;
+    margin-left: 100px;
     height: 300px;
     width: 300px;
 } 
+.hero-text{
+    margin-left: 100px;
+}
 .hero-logo img{
     margin-top: 70px;
   }
@@ -516,8 +522,6 @@ margin-left: 10px
     margin-left: 100px;
 }
 .footer-icon{
-    /* line-clamp: 10px;
-    line-height: 10px; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
